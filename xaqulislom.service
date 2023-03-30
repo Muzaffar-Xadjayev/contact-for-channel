@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+Description=xaqulislom_bot
+
+[Service]
+Type=simple
+WorkingDirectory=/root/TGBOTS/xaqulislom
+ExecStart=/root/TGBOTS/xaqulislom/venv/bin/python3.10 app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
