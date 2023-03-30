@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+Description=channel_bot
+
+[Service]
+Type=simple
+WorkingDirectory=/root/TGBOTS/DIR_NAME
+ExecStart=/root/TGBOTS/DIR_NAME/venv/bin/python3.10 app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
