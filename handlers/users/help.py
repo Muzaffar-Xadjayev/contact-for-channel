@@ -1,7 +1,7 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandHelp
 
-from loader import dp
+from loader import dp, bot
 
 
 @dp.message_handler(CommandHelp())
@@ -12,5 +12,4 @@ async def help_user(message: types.Message):
           f"<b>Botni ishlash tartibi</b>\n\n" \
           f"1.<a href='https://t.me/xaqulislom'>🫀Xaq Ul Islom🫀 Mع🙃</a> Telegram kanalining adminiga murojaat qilish uchun mo'ljallangan rasmiy bot."
 
-    await message.reply(msg)
-
+    await bot.send_message(message.from_user.id,msg)
