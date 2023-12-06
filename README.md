@@ -1,2 +1,2 @@
 # contact-for-channel
-### This is Contact for channels bot. You can get it and Try to use.
+### This is Contact Bot for channels. You can get it and Try to use.
